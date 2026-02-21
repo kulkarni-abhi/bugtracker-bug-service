@@ -1,0 +1,6 @@
+apiVersion: v2
+name: bugtracker-bug-service
+description: Helm chart for bugtracker-bug-service
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
