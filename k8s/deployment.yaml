@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bug-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bug-service
+  template:
+    metadata:
+      labels:
+        app: bug-service
+    spec:
+      containers:
+        - name: bug-service
+          image: bug-service:latest
+          ports:
+            - containerPort: 8080
